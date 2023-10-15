@@ -222,6 +222,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 5
   rb: {fileID: 335936510}
+  turretObject: {fileID: 8673709708420768986, guid: e52352057df89da4891a37d2ad33e3e7, type: 3}
 --- !u!50 &335936510
 Rigidbody2D:
   serializedVersion: 4
