@@ -16,10 +16,15 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private Object turretObject;
 
+    private int maxHealth = 50;
+    public int playerHealth; 
+
     // Start is called before the first frame update
     void Start()
     {
         turretManager = GameObject.FindObjectOfType<TurretManager>().GetComponent<TurretManager>();
+
+        playerHealth = maxHealth;
     }
 
     // Update is called once per frame
@@ -31,6 +36,11 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyDown("space")){
             CreateTurret();
+        }
+
+        if(playerHealth <= 0)
+        {
+            Debug.Log("Lose State");
         }
     }
 
