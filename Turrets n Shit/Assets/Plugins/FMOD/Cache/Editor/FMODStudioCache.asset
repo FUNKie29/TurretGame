@@ -26,6 +26,33 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+  Length: 2281
+--- !u!114 &-8212916865967081384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enemies/EnemyDeath
+  m_EditorClassIdentifier: 
+  Path: event:/Enemies/EnemyDeath
+  Guid:
+    Data1: -1495149721
+    Data2: 1216296716
+    Data3: -77715798
+    Data4: 619608408
+  Banks:
+  - {fileID: -238086213269387578}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
   Length: 2000
 --- !u!114 &-7845537464530327093
 MonoBehaviour:
@@ -42,7 +69,7 @@ MonoBehaviour:
   Path: Assets/AudioAssets/FMOD/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638330024749612912
+  lastModified: 638330095885924746
   FileSizes: []
   Exists: 1
 --- !u!114 &-6173547226501248432
@@ -60,10 +87,28 @@ MonoBehaviour:
   Path: Assets/AudioAssets/FMOD/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638330091599234022
+  lastModified: 638330095885934677
   FileSizes:
   - Name: 
-    Value: 958
+    Value: 1058
+  Exists: 1
+--- !u!114 &-238086213269387578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Enemies.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/AudioAssets/FMOD/Desktop/Enemies.bank
+  Name: Enemies
+  StudioPath: bank:/Enemies
+  lastModified: 638330095885646627
+  FileSizes: []
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -81,17 +126,19 @@ MonoBehaviour:
   - {fileID: -6173547226501248432}
   - {fileID: -7845537464530327093}
   - {fileID: 1946347442656046363}
+  - {fileID: -238086213269387578}
   EditorEvents:
   - {fileID: 1896739252155482706}
   - {fileID: 8756778021812782845}
   - {fileID: -8691081735493066810}
   - {fileID: 554956799733223467}
+  - {fileID: -8212916865967081384}
   EditorParameters: []
   MasterBanks:
   - {fileID: -7845537464530327093}
   StringsBanks:
   - {fileID: -6173547226501248432}
-  cacheTime: 638330091599304102
+  cacheTime: 638330095886774051
   cacheVersion: 131608
 --- !u!114 &554956799733223467
 MonoBehaviour:
@@ -163,7 +210,7 @@ MonoBehaviour:
   Path: Assets/AudioAssets/FMOD/Desktop/Turret.bank
   Name: Turret
   StudioPath: bank:/Turret
-  lastModified: 638330091599304102
+  lastModified: 638330095886774051
   FileSizes: []
   Exists: 1
 --- !u!114 &8756778021812782845

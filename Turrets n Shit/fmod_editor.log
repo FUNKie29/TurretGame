@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 00000210B92380D8 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0000021B2E7A74E8 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -16,41 +16,6 @@
 [LOG] Manager::init                            : done.
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
-[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
-[WRN] ObjectLookup::get                        : Lookup failed for EventModel: {1491946f-22f1-4df0-9826-4bd96abf44f8}
-[WRN] ObjectLookup::get                        : Lookup failed for EventModel: {521435d3-876c-42d6-9e05-de33c6c88b0b}
-[WRN] ObjectLookup::get                        : Lookup failed for EventModel: {1491946f-22f1-4df0-9826-4bd96abf44f8}
-[WRN] ObjectLookup::get                        : Lookup failed for EventModel: {521435d3-876c-42d6-9e05-de33c6c88b0b}
-[WRN] ObjectLookup::get                        : Lookup failed for EventModel: {1491946f-22f1-4df0-9826-4bd96abf44f8}
-[WRN] ObjectLookup::get                        : Lookup failed for EventModel: {521435d3-876c-42d6-9e05-de33c6c88b0b}
-[WRN] ObjectLookup::get                        : Lookup failed for EventModel: {521435d3-876c-42d6-9e05-de33c6c88b0b}
-[WRN] ObjectLookup::get                        : Lookup failed for EventModel: {521435d3-876c-42d6-9e05-de33c6c88b0b}
-[WRN] ObjectLookup::get                        : Lookup failed for EventModel: {521435d3-876c-42d6-9e05-de33c6c88b0b}
-[WRN] ObjectLookup::get                        : Lookup failed for EventModel: {521435d3-876c-42d6-9e05-de33c6c88b0b}
-[WRN] ObjectLookup::get                        : Lookup failed for EventModel: {521435d3-876c-42d6-9e05-de33c6c88b0b}
-[WRN] ObjectLookup::get                        : Lookup failed for EventModel: {521435d3-876c-42d6-9e05-de33c6c88b0b}
-[WRN] ObjectLookup::get                        : Lookup failed for EventModel: {521435d3-876c-42d6-9e05-de33c6c88b0b}
-[WRN] ObjectLookup::get                        : Lookup failed for EventModel: {521435d3-876c-42d6-9e05-de33c6c88b0b}
-[WRN] ObjectLookup::get                        : Lookup failed for EventModel: {521435d3-876c-42d6-9e05-de33c6c88b0b}
-[WRN] ObjectLookup::get                        : Lookup failed for EventModel: {efe943f2-88dd-4d72-b6e2-03f8f7d0dbd5}
-[WRN] ObjectLookup::get                        : Lookup failed for EventModel: {efe943f2-88dd-4d72-b6e2-03f8f7d0dbd5}
-[WRN] ObjectLookup::get                        : Lookup failed for EventModel: {efe943f2-88dd-4d72-b6e2-03f8f7d0dbd5}
-[LOG] Thread::callback                         : FMOD Studio update thread finished.
-[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
-[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
-[LOG] LiveUpdate::release                      : 
-[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
-[LOG] Thread::callback                         : FMOD stream thread finished.
-[LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
-[LOG] SystemI::close                           : Closed.
-[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
-[LOG] LiveUpdate::release                      : 
-[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
-[LOG] Thread::callback                         : FMOD stream thread finished.
-[LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] SystemI::close                           : Closed.
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)

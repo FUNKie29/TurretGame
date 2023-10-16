@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6223395820847448206}
   - component: {fileID: 6223395820847448205}
   - component: {fileID: 6223395820847448207}
+  - component: {fileID: 1025908858147922647}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -136,3 +137,34 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &1025908858147922647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6223395820847448178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1495149721
+      Data2: 1216296716
+      Data3: -77715798
+      Data4: 619608408
+    Path: event:/Enemies/EnemyDeath
+  Event: 
+  PlayEvent: 2
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
