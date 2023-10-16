@@ -1,5 +1,32 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8691081735493066810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Turret/TurretDeath
+  m_EditorClassIdentifier: 
+  Path: event:/Turret/TurretDeath
+  Guid:
+    Data1: -269925390
+    Data2: 1299351773
+    Data3: -133963082
+    Data4: -707014409
+  Banks:
+  - {fileID: 1946347442656046363}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
 --- !u!114 &-7845537464530327093
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15,7 +42,7 @@ MonoBehaviour:
   Path: Assets/AudioAssets/FMOD/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638330024749612912
+  lastModified: 638330044493651535
   FileSizes: []
   Exists: 1
 --- !u!114 &-6173547226501248432
@@ -33,10 +60,10 @@ MonoBehaviour:
   Path: Assets/AudioAssets/FMOD/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638330024749622881
+  lastModified: 638330044493666444
   FileSizes:
   - Name: 
-    Value: 818
+    Value: 902
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -56,12 +83,14 @@ MonoBehaviour:
   - {fileID: 1946347442656046363}
   EditorEvents:
   - {fileID: 1896739252155482706}
+  - {fileID: 8756778021812782845}
+  - {fileID: -8691081735493066810}
   EditorParameters: []
   MasterBanks:
   - {fileID: -7845537464530327093}
   StringsBanks:
   - {fileID: -6173547226501248432}
-  cacheTime: 638330024749642833
+  cacheTime: 638330044494180261
   cacheVersion: 131608
 --- !u!114 &1896739252155482706
 MonoBehaviour:
@@ -106,6 +135,33 @@ MonoBehaviour:
   Path: Assets/AudioAssets/FMOD/Desktop/Turret.bank
   Name: Turret
   StudioPath: bank:/Turret
-  lastModified: 638330024749642833
+  lastModified: 638330044494180261
   FileSizes: []
   Exists: 1
+--- !u!114 &8756778021812782845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Turret/TurretCreate
+  m_EditorClassIdentifier: 
+  Path: event:/Turret/TurretCreate
+  Guid:
+    Data1: -595761864
+    Data2: 1186014357
+    Data3: 990025876
+    Data4: 423091767
+  Banks:
+  - {fileID: 1946347442656046363}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
