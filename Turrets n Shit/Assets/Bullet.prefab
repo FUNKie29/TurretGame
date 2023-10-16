@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -2014618381227855159}
   - component: {fileID: 9052117021754729557}
   - component: {fileID: -648442410616642971}
+  - component: {fileID: -8044113127711729030}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -135,3 +136,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletSpeed: 5
+--- !u!114 &-8044113127711729030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2336722956262152454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1377056211
+      Data2: 1121355628
+      Data3: 870188446
+      Data4: 193710278
+    Path: event:/TurretFiring
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
