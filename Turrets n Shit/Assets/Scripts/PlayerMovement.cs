@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+
+    private TurretManager turretManager;
+
     [SerializeField]
     private float movementSpeed;
 
@@ -13,12 +16,10 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private Object turretObject;
 
-
-
     // Start is called before the first frame update
     void Start()
     {
-
+        turretManager = GameObject.FindObjectOfType<TurretManager>().GetComponent<TurretManager>();
     }
 
     // Update is called once per frame
@@ -35,6 +36,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void CreateTurret()
     {
-        Instantiate(turretObject, new Vector2(transform.position.x + 5f, transform.position.y), Quaternion.identity);
+        if (turretManager.Number_Of_Active_Turrets < turretManager.Number_Of_Allowed_Turrets) {
+            Instantiate(turretObject, new Vector2(transform.position.x + 5f, transform.position.y), Quaternion.identity);
+            turretManager.Number_Of_Active_Turrets++;
+        }
     }
 }
