@@ -155,7 +155,7 @@ MonoBehaviour:
       Data2: 1121355628
       Data3: 870188446
       Data4: 193710278
-    Path: event:/TurretFiring
+    Path: event:/Turret/TurretFiring
   Event: 
   PlayEvent: 1
   StopEvent: 0

@@ -357,10 +357,10 @@ MonoBehaviour:
   m_Name: FMODStudioSettings
   m_EditorClassIdentifier: 
   switchSettingsMigration: 1
-  HasSourceProject: 1
-  HasPlatforms: 1
+  HasSourceProject: 0
+  HasPlatforms: 0
   sourceProjectPath: D:/Game Development/Turret Game/TurretGame/TurretGame.fspro
-  sourceBankPath: D:/Game Development/Turret Game/TurretGame/Build
+  sourceBankPath: Assets/AudioAssets/FMOD/Desktop
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
@@ -383,7 +383,8 @@ MonoBehaviour:
   Plugins: []
   MasterBanks:
   - Master
-  Banks: []
+  Banks:
+  - Turret
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0

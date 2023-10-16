@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-7399836058613120908
+--- !u!114 &-7845537464530327093
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12,15 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: bank:/Master.bank
   m_EditorClassIdentifier: 
-  Path: D:/Game Development/Turret Game/TurretGame/Build/Desktop/Master.bank
+  Path: Assets/AudioAssets/FMOD/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638330004865320966
-  FileSizes:
-  - Name: Desktop
-    Value: 46496
+  lastModified: 638330018103872897
+  FileSizes: []
   Exists: 1
---- !u!114 &-2016286116933765586
+--- !u!114 &-6173547226501248432
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -32,13 +30,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: bank:/Master.strings.bank
   m_EditorClassIdentifier: 
-  Path: D:/Game Development/Turret Game/TurretGame/Build/Desktop/Master.strings.bank
+  Path: Assets/AudioAssets/FMOD/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638330004865330898
+  lastModified: 638330018103887798
   FileSizes:
-  - Name: Desktop
-    Value: 762
+  - Name: 
+    Value: 818
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -53,18 +51,19 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -2016286116933765586}
-  - {fileID: -7399836058613120908}
+  - {fileID: -6173547226501248432}
+  - {fileID: -7845537464530327093}
+  - {fileID: 1946347442656046363}
   EditorEvents:
-  - {fileID: 784689150539126189}
+  - {fileID: 1896739252155482706}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -7399836058613120908}
+  - {fileID: -7845537464530327093}
   StringsBanks:
-  - {fileID: -2016286116933765586}
-  cacheTime: 638330004865330898
+  - {fileID: -6173547226501248432}
+  cacheTime: 638330018104051707
   cacheVersion: 131608
---- !u!114 &784689150539126189
+--- !u!114 &1896739252155482706
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -74,16 +73,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/TurretFiring
+  m_Name: event:/Turret/TurretFiring
   m_EditorClassIdentifier: 
-  Path: event:/TurretFiring
+  Path: event:/Turret/TurretFiring
   Guid:
     Data1: 1377056211
     Data2: 1121355628
     Data3: 870188446
     Data4: 193710278
   Banks:
-  - {fileID: -7399836058613120908}
+  - {fileID: -7845537464530327093}
+  - {fileID: 1946347442656046363}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -91,3 +91,21 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
+--- !u!114 &1946347442656046363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Turret.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/AudioAssets/FMOD/Desktop/Turret.bank
+  Name: Turret
+  StudioPath: bank:/Turret
+  lastModified: 638330018104051707
+  FileSizes: []
+  Exists: 1
