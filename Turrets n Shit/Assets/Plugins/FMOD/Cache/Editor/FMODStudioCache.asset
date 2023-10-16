@@ -42,7 +42,7 @@ MonoBehaviour:
   Path: Assets/AudioAssets/FMOD/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638330044493651535
+  lastModified: 638330055500781063
   FileSizes: []
   Exists: 1
 --- !u!114 &-6173547226501248432
@@ -60,10 +60,10 @@ MonoBehaviour:
   Path: Assets/AudioAssets/FMOD/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638330044493666444
+  lastModified: 638330055500805895
   FileSizes:
   - Name: 
-    Value: 902
+    Value: 958
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -85,13 +85,41 @@ MonoBehaviour:
   - {fileID: 1896739252155482706}
   - {fileID: 8756778021812782845}
   - {fileID: -8691081735493066810}
+  - {fileID: 554956799733223467}
   EditorParameters: []
   MasterBanks:
   - {fileID: -7845537464530327093}
   StringsBanks:
   - {fileID: -6173547226501248432}
-  cacheTime: 638330044494180261
+  cacheTime: 638330055501471427
   cacheVersion: 131608
+--- !u!114 &554956799733223467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Turret/BulletDestroy
+  m_EditorClassIdentifier: 
+  Path: event:/Turret/BulletDestroy
+  Guid:
+    Data1: -946548335
+    Data2: 1132658762
+    Data3: 1344024242
+    Data4: 1732044891
+  Banks:
+  - {fileID: 1946347442656046363}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &1896739252155482706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,7 +163,7 @@ MonoBehaviour:
   Path: Assets/AudioAssets/FMOD/Desktop/Turret.bank
   Name: Turret
   StudioPath: bank:/Turret
-  lastModified: 638330044494180261
+  lastModified: 638330055501471427
   FileSizes: []
   Exists: 1
 --- !u!114 &8756778021812782845
@@ -152,10 +180,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Turret/TurretCreate
   Guid:
-    Data1: -595761864
-    Data2: 1186014357
-    Data3: 990025876
-    Data4: 423091767
+    Data1: 345085039
+    Data2: 1307583217
+    Data3: -649386344
+    Data4: -129712278
   Banks:
   - {fileID: 1946347442656046363}
   IsStream: 0
@@ -164,4 +192,4 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2000
+  Length: 2125

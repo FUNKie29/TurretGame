@@ -163,10 +163,10 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -595761864
-      Data2: 1186014357
-      Data3: 990025876
-      Data4: 423091767
+      Data1: 345085039
+      Data2: 1307583217
+      Data3: -649386344
+      Data4: -129712278
     Path: event:/Turret/TurretCreate
   Event: 
   PlayEvent: 1
