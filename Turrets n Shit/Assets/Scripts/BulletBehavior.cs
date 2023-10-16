@@ -16,8 +16,8 @@ public class BulletBehavior : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Vector3 vec = new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f), 0f);
-        bulletDirection = vec.normalized;
+        //Vector3 vec = new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f), 0f);
+        //bulletDirection = vec.normalized;
 
         StartCoroutine(BulletLifetime());
     }
@@ -32,5 +32,10 @@ public class BulletBehavior : MonoBehaviour
     {
         yield return new WaitForSeconds(5f);
         Destroy(gameObject);
+    }
+
+    public void setDirection(Vector3 direction)
+    {
+        bulletDirection = direction;
     }
 }

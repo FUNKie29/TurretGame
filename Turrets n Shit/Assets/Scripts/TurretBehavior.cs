@@ -42,9 +42,10 @@ public class TurretBehavior : MonoBehaviour
 
     private void ShootProjectile()
     {
-        Instantiate(projectileObject, transform.position, Quaternion.identity);
+        GameObject bullet = Instantiate((GameObject)projectileObject, transform.position, Quaternion.identity);
+        bullet.GetComponent<BulletBehavior>().setDirection(FindNearestEnemy());
     }
-    private void FindNearestEnemy()
+    private Vector3 FindNearestEnemy()
     {
         Vector3 directionToShoot;
 
@@ -62,7 +63,7 @@ public class TurretBehavior : MonoBehaviour
             }
         }
 
-        directionToShoot = (nearestEnemy.transform.position); ;
-
+        directionToShoot = (nearestEnemy.transform.position - transform.position).normalized;
+        return directionToShoot;
     }
 }
