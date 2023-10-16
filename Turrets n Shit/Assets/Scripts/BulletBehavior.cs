@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BulletBehavior : MonoBehaviour
 {
-    private int damage;
+    private int damage = 5;
 
     [SerializeField]
     private float bulletSpeed;
@@ -37,5 +37,15 @@ public class BulletBehavior : MonoBehaviour
     public void setDirection(Vector3 direction)
     {
         bulletDirection = direction;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+       EnemyBehavior enemy = collision.gameObject.GetComponent<EnemyBehavior>();
+
+        if (enemy)
+        {
+            enemy.health -= damage;
+        }
     }
 }

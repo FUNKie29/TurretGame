@@ -11,9 +11,13 @@ public class TurretBehavior : MonoBehaviour
     [SerializeField]
     private Object projectileObject;
 
+    private TurretManager turretManager;
+
     // Start is called before the first frame update
     void Start()
     {
+        turretManager = GameObject.Find("TurretManager").GetComponent<TurretManager>();
+
         StartCoroutine(ShootRoutine());
         StartCoroutine(LifeTimer());
     }
@@ -28,7 +32,7 @@ public class TurretBehavior : MonoBehaviour
     {
         while (true)
         {
-            ShootProjectile();
+            FindNearestEnemy();
             yield return new WaitForSeconds(3f);
         }
     }
@@ -38,14 +42,16 @@ public class TurretBehavior : MonoBehaviour
 
         yield return new WaitForSeconds(10f);
         Destroy(gameObject);
+        turretManager.Number_Of_Active_Turrets -= 1;
     }
 
-    private void ShootProjectile()
+    private void ShootProjectile(Vector3 bulletDirection)
     {
         GameObject bullet = Instantiate((GameObject)projectileObject, transform.position, Quaternion.identity);
-        bullet.GetComponent<BulletBehavior>().setDirection(FindNearestEnemy());
+        bullet.GetComponent<BulletBehavior>().setDirection(bulletDirection);
     }
-    private Vector3 FindNearestEnemy()
+
+    private void FindNearestEnemy()
     {
         Vector3 directionToShoot;
 
@@ -53,17 +59,22 @@ public class TurretBehavior : MonoBehaviour
         float shortestDistance = Mathf.Infinity;
         GameObject nearestEnemy = null;
 
-        foreach (GameObject enemy in enemies)
+        if (enemies.Length > 0)
         {
-            float distanceToEnemy = Vector3.Distance(transform.position, enemy.transform.position);
-            if (distanceToEnemy < shortestDistance)
+            foreach (GameObject enemy in enemies)
             {
-                shortestDistance = distanceToEnemy;
-                nearestEnemy = enemy;
+                float distanceToEnemy = Vector3.Distance(transform.position, enemy.transform.position);
+                if (distanceToEnemy < shortestDistance)
+                {
+                    shortestDistance = distanceToEnemy;
+                    nearestEnemy = enemy;
+                }
             }
+            directionToShoot = (nearestEnemy.transform.position - transform.position).normalized;
+            ShootProjectile(directionToShoot);
+
         }
 
-        directionToShoot = (nearestEnemy.transform.position - transform.position).normalized;
-        return directionToShoot;
+        else return;
     }
 }

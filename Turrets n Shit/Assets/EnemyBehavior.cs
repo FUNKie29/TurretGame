@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class EnemyBehavior : MonoBehaviour
 {
-    private int health;
+    public int health;
+    private int maxHealth = 5;
     private int damage = 10;
     private float movementSpeed = 2.5f;
 
@@ -14,7 +15,7 @@ public class EnemyBehavior : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        health = maxHealth;
     }
 
     // Update is called once per frame
@@ -23,6 +24,11 @@ public class EnemyBehavior : MonoBehaviour
         Vector3 playerPosition = player.transform.position;
         Vector3 directionToMove = (playerPosition - transform.position).normalized;
         transform.position += directionToMove * movementSpeed * Time.deltaTime;
+
+        if(health <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
