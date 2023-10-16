@@ -385,6 +385,7 @@ MonoBehaviour:
   - Master
   Banks:
   - Enemies
+  - Global
   - Turret
   BanksToLoad: []
   LiveUpdatePort: 9264
