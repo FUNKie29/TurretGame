@@ -21,7 +21,7 @@ public class TurretBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private IEnumerator ShootRoutine()
@@ -43,5 +43,26 @@ public class TurretBehavior : MonoBehaviour
     private void ShootProjectile()
     {
         Instantiate(projectileObject, transform.position, Quaternion.identity);
+    }
+    private void FindNearestEnemy()
+    {
+        Vector3 directionToShoot;
+
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        float shortestDistance = Mathf.Infinity;
+        GameObject nearestEnemy = null;
+
+        foreach (GameObject enemy in enemies)
+        {
+            float distanceToEnemy = Vector3.Distance(transform.position, enemy.transform.position);
+            if (distanceToEnemy < shortestDistance)
+            {
+                shortestDistance = distanceToEnemy;
+                nearestEnemy = enemy;
+            }
+        }
+
+        directionToShoot = (nearestEnemy.transform.position); ;
+
     }
 }

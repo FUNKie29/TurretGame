@@ -32,7 +32,7 @@ public class EnemyBehavior : MonoBehaviour
         if (character)
         {
             player.GetComponent<PlayerMovement>().playerHealth -= damage;
-            player.GetComponent<Rigidbody2D>().transform.position += (player.transform.position - transform.position).normalized *2f;
+            player.GetComponent<Rigidbody2D>().transform.position += (player.transform.position - transform.position).normalized * 2f;
         }
     }
 }
